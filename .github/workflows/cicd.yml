@@ -1,0 +1,16 @@
+name: Simple CI
+
+on:
+  push:
+    branches:
+      - main
+      - production
+  workflow_dispatch:
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Hello! GitHub Actions is working!"
